@@ -32,7 +32,7 @@ You can install the required dependencies using `pip`:
 ```bash
 pip install -r requirements.txt
 ```
-###Running the Code
+### Running the Code
 To run the model training and evaluation, use the following command:
 ```bash
 python train.py --img-size 640 --batch-size 16 --epochs 50 --data data.yaml --cfg yolov5s.yaml --weights yolov5s.pt --device 0 --loss-path /path/to/custom/loss.py
