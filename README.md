@@ -12,7 +12,7 @@ The goal of this project is to:
 
 ## Dataset
 
-The dataset used consists of labeled images containing cats and dogs. The images are annotated with bounding boxes, and the data is divided into two classes: **dog** and **cat**.
+The dataset used consists of labeled images containing cats and dogs. The images are annotated with bounding boxes, and the data is divided into two classes: **dog** and **cat**. Link : https://www.kaggle.com/datasets/andrewmvd/dog-and-cat-detection
 
 - **Number of images**: 500 for training, 100 for validation (80%/20% split).
 - **Annotations**: Pascal VOC format annotations were converted to YOLO format.
