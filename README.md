@@ -1,5 +1,6 @@
 # Cat_dog_detection_YOLO_new_metric
 # Custom Object Detection with YOLOv5 and Custom Metric
+Kaggle note book Link : https://www.kaggle.com/code/venuriamarasinghe/cat-dog-detection-venuri-amarasinghe
 
 This repository contains the implementation of a custom object detection pipeline using **YOLOv5**. The objective is to detect **cats** and **dogs** from a small, manually labeled image dataset. Additionally, a **custom bounding box similarity metric** has been implemented alongside traditional Intersection over Union (IoU) for improved detection performance.
 
