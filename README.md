@@ -46,7 +46,7 @@ Center alignment: Difference in the central coordinates of the bounding boxes, s
 
 The custom metric combines these factors to provide a more comprehensive measure of box similarity than traditional IoU.
 
-Custom Metric Equation
+### Custom Metric Equation
 The custom metric is calculated using:
 ```python
 def center_ar_metric_tensor(boxA, boxB, img_size=640):
@@ -90,7 +90,7 @@ def center_ar_metric_tensor(boxA, boxB, img_size=640):
     return 0.1* (1 - delta_c) + 0.1*(1 - delta_r)
 ```
 This metric is designed to improve bounding box alignment, especially for objects with varying aspect ratios.
-Results
+### Results
 Standard Metrics:
 mAP (mean Average Precision): Measures the average precision across all classes.
 
@@ -99,23 +99,24 @@ IoU (Intersection over Union): Measures the overlap between predicted and ground
 Custom Metric:
 The custom metric was evaluated alongside the standard metrics to assess its impact on detection performance.
 
-Qualitative Results:
+### Qualitative Results:
 Sample images with bounding boxes will be displayed once the model finishes training. The bounding boxes will show how well the model detects cats and dogs.
 
-Reflection
+### Reflection
 Performance:
 The custom similarity metric is shown to improve the detection of certain objects with specific aspect ratios and center alignment. It is especially useful in cases where the objects are not uniform in size or shape.
 
-Trade-offs:
+### Trade-offs:
 There is a trade-off between computational complexity and detection accuracy. The additional terms in the custom metric require more computation, but they provide a more robust measure of box alignment and aspect ratio similarity.
 
-Future Improvements:
+### Future Improvements:
 Class-weighting: Introducing weighted penalties for misclassifications.
 
 Distance-based penalties: Additional penalties for extreme misalignments.
 Files
 train.py: Main script for training the YOLOv5 model with custom loss functions.
 
-data.yaml: Configuration file for dataset paths.
+data_yaml: Configuration file for dataset paths.
+loss_original: The original loss file wihtout the center_ar_metric
 
-custom_loss.py: Contains the custom bounding box similarity metric.
+
