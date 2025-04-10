@@ -123,4 +123,5 @@ train.py: Main script for training the YOLOv5 model with custom loss functions.
 data_yaml: Configuration file for dataset paths.
 loss_original: The original loss file wihtout the center_ar_metric
 
+![image](https://github.com/user-attachments/assets/efd755f1-0569-41f1-9e90-c1d3a7f54a7c)
 
