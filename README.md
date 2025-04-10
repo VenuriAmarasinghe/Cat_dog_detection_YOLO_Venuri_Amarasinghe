@@ -31,6 +31,9 @@ Make sure to have the following installed:
 You can install the required dependencies using `pip`:
 
 ```bash
+# clone the yolov5 model 
+!git clone https://github.com/ultralytics/yolov5
+%cd yolov5
 pip install -r requirements.txt
 ```
 ### Running the Code
