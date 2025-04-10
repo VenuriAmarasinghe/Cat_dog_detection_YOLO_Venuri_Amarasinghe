@@ -117,11 +117,12 @@ There is a trade-off between computational complexity and detection accuracy. Th
 Class-weighting: Introducing weighted penalties for misclassifications.
 
 Distance-based penalties: Additional penalties for extreme misalignments.
-Files
-train.py: Main script for training the YOLOv5 model with custom loss functions.
+### Files
+train.py: Main script for training the YOLOv5 model with original loss functions.
+The loss.py file is updated during the run to get the new loss function.
 
 data_yaml: Configuration file for dataset paths.
-loss_original: The original loss file wihtout the center_ar_metric
+loss_original.py: The original loss file without the center_ar_metric
 
 ![image](https://github.com/user-attachments/assets/efd755f1-0569-41f1-9e90-c1d3a7f54a7c)
 
