@@ -37,7 +37,7 @@ You can install the required dependencies using `pip`:
 pip install -r requirements.txt
 ```
 ### Running the Code
-To run the model training and evaluation, use the following command:
+To run the model training and evaluation, use the following command after following the modification steps in Jupyter notebook. Those steps are related to creating training and validation datasets, converting the .xml labels to the txt format.
 ```bash
 python train.py --img-size 640 --batch-size 16 --epochs 50 --data data.yaml --cfg yolov5s.yaml --weights yolov5s.pt --device 0 --loss-path /path/to/custom/loss.py
 ```
